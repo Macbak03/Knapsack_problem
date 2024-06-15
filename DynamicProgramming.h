@@ -1,9 +1,8 @@
 #pragma once
 
-
 #include "Algorithm.h"
 
-class BruteForce : public Algorithm {
+class DynamicProgramming : public Algorithm {
 public:
     using Algorithm::Algorithm;
     void findKnapsackProblemSolution();

@@ -14,6 +14,8 @@ protected:
     std::vector<int> solution;
 
 public:
+    const static std::string argumentBruteForce;
+    const static std::string argumentDynamicProgramming;
     explicit Algorithm(const std::string& fileName);
     void printSolution();
 };

@@ -2,6 +2,7 @@
 #include <fstream>
 #include "Item.h"
 #include "BruteForce.h"
+#include "DynamicProgramming.h"
 
 using namespace std;
 
@@ -28,9 +29,17 @@ void generateItemsFile() {
 }
 
 
-int main() {
-    //generateItemsFile();
-    BruteForce bruteForce(fileName);
-    bruteForce.findKnapsackProblemSolution();
+int main(int argc, char *argv[]) {
+    generateItemsFile();
+    if (argc == 2 && string(argv[1]) == Algorithm::argumentBruteForce){
+        BruteForce bruteForce(fileName);
+        bruteForce.findKnapsackProblemSolution();
+    }else if (argc == 2 && string(argv[1]) == Algorithm::argumentDynamicProgramming){
+        DynamicProgramming dynamicProgramming(fileName);
+        dynamicProgramming.findKnapsackProblemSolution();
+    }else {
+        cerr << "Invalid argument";
+        return 1;
+    }
     return 0;
 }

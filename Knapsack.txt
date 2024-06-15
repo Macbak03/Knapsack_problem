@@ -1,0 +1,22 @@
+60
+20
+3 1 cup
+70 3 ruby
+20 4 pelt
+35 8 skull
+20 4 pelt
+3 1 cup
+35 8 skull
+100 3 diamond
+25 1 claw
+20 4 pelt
+30 5 scales
+3 1 cup
+10 2 bone
+35 8 skull
+10 2 bone
+70 3 ruby
+70 3 ruby
+20 4 pelt
+3 1 cup
+10 2 bone

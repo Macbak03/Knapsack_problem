@@ -1,9 +1,13 @@
 #include <fstream>
 #include <iostream>
+#include <sstream>
 #include "Algorithm.h"
 #include "map"
 
 using namespace std;
+
+const string Algorithm::argumentBruteForce = "--BruteForce";
+const string Algorithm::argumentDynamicProgramming = "--DynamicProgramming";
 
 Algorithm::Algorithm(const string &fileName) {
     maxItemsValue = 0;
